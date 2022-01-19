@@ -12,10 +12,12 @@ class IkinciViewController: UIViewController {
     @IBOutlet weak var ikinciLabel: UILabel!
     @IBOutlet weak var bulunanSifreLabel: UILabel!
     
+    var verilenSifre = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        bulunanSifreLabel.text = verilenSifre
     }
     
 
