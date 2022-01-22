@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD00E206279C60B4006BA0CD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E205279C60B4006BA0CD /* TableViewController.swift */; };
 		AD8F3FA5279B6783007A490E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3FA4279B6783007A490E /* AppDelegate.swift */; };
 		AD8F3FA7279B6783007A490E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3FA6279B6783007A490E /* SceneDelegate.swift */; };
-		AD8F3FA9279B6783007A490E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3FA8279B6783007A490E /* ViewController.swift */; };
+		AD8F3FA9279B6783007A490E /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3FA8279B6783007A490E /* MapsViewController.swift */; };
 		AD8F3FAC279B6783007A490E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8F3FAA279B6783007A490E /* Main.storyboard */; };
 		AD8F3FAF279B6783007A490E /* MapsApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD8F3FAD279B6783007A490E /* MapsApplication.xcdatamodeld */; };
 		AD8F3FB1279B6786007A490E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8F3FB0279B6786007A490E /* Assets.xcassets */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD00E205279C60B4006BA0CD /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		AD8F3FA1279B6783007A490E /* MapsApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8F3FA4279B6783007A490E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD8F3FA6279B6783007A490E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD8F3FA8279B6783007A490E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD8F3FA8279B6783007A490E /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		AD8F3FAB279B6783007A490E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD8F3FAE279B6783007A490E /* MapsApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MapsApplication.xcdatamodel; sourceTree = "<group>"; };
 		AD8F3FB0279B6786007A490E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +62,8 @@
 			children = (
 				AD8F3FA4279B6783007A490E /* AppDelegate.swift */,
 				AD8F3FA6279B6783007A490E /* SceneDelegate.swift */,
-				AD8F3FA8279B6783007A490E /* ViewController.swift */,
+				AD00E205279C60B4006BA0CD /* TableViewController.swift */,
+				AD8F3FA8279B6783007A490E /* MapsViewController.swift */,
 				AD8F3FAA279B6783007A490E /* Main.storyboard */,
 				AD8F3FB0279B6786007A490E /* Assets.xcassets */,
 				AD8F3FB2279B6786007A490E /* LaunchScreen.storyboard */,
@@ -141,9 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8F3FA9279B6783007A490E /* ViewController.swift in Sources */,
+				AD8F3FA9279B6783007A490E /* MapsViewController.swift in Sources */,
 				AD8F3FAF279B6783007A490E /* MapsApplication.xcdatamodeld in Sources */,
 				AD8F3FA5279B6783007A490E /* AppDelegate.swift in Sources */,
+				AD00E206279C60B4006BA0CD /* TableViewController.swift in Sources */,
 				AD8F3FA7279B6783007A490E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +300,7 @@
 				DEVELOPMENT_TEAM = 92867Z79G9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapsApplication/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,6 +329,7 @@
 				DEVELOPMENT_TEAM = 92867Z79G9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapsApplication/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
