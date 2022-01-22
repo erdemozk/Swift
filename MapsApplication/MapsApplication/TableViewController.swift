@@ -89,6 +89,52 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return nameArray.count
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Place")
+            let uuidStr = idArray[indexPath.row].uuidString
+            
+            fetchRequest.returnsObjectsAsFaults = false
+            fetchRequest.predicate = NSPredicate(format: "id = %@", uuidStr)
+            
+            do {
+                let result = try context.fetch(fetchRequest)
+                
+                if result.count > 0 {
+                    for r in result as! [NSManagedObject] {
+                        
+                        if let id = r.value(forKey: "id") as? UUID  {
+                            if id == idArray[indexPath.row]{
+                                
+                                context.delete(r)
+                                nameArray.remove(at: indexPath.row)
+                                idArray.remove(at: indexPath.row)
+                                
+                                self.tableView.reloadData()
+                                
+                                do {
+                                    try context.save()
+                                } catch {
+                                    print("ERROR")
+                                }
+                                
+                                break
+                                
+                            }
+                        }
+                    }
+                }
+                
+            } catch {
+                print("ERROR DELETE")
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         selectedName = nameArray[indexPath.row]
