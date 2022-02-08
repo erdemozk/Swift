@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD00E214279CA777006BA0CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E213279CA777006BA0CD /* AppDelegate.swift */; };
+		AD00E216279CA777006BA0CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E215279CA777006BA0CD /* SceneDelegate.swift */; };
+		AD00E218279CA777006BA0CD /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E217279CA777006BA0CD /* AuthViewController.swift */; };
+		AD00E21B279CA777006BA0CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD00E219279CA777006BA0CD /* Main.storyboard */; };
+		AD00E21D279CA77B006BA0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD00E21C279CA77B006BA0CD /* Assets.xcassets */; };
+		AD00E220279CA77B006BA0CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD00E21E279CA77B006BA0CD /* LaunchScreen.storyboard */; };
+		AD00E22A279CA923006BA0CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD00E229279CA923006BA0CD /* GoogleService-Info.plist */; };
+		AD00E22D279CAD5E006BA0CD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD00E22C279CAD5E006BA0CD /* FirebaseAuth */; };
+		AD00E22F279CAD5E006BA0CD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD00E22E279CAD5E006BA0CD /* FirebaseFirestore */; };
+		AD00E231279CAD5E006BA0CD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AD00E230279CAD5E006BA0CD /* FirebaseStorage */; };
+		AD00E233279CD205006BA0CD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E232279CD205006BA0CD /* FeedViewController.swift */; };
+		AD00E235279CD21E006BA0CD /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E234279CD21E006BA0CD /* UploadViewController.swift */; };
+		AD00E237279CD231006BA0CD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E236279CD231006BA0CD /* SettingsViewController.swift */; };
+		AD22DD1627AFF0FB00809F12 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AD22DD1527AFF0FB00809F12 /* SDWebImage */; };
+		AD22DD1827AFF44500809F12 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22DD1727AFF44500809F12 /* Post.swift */; };
+		ADF2DF88279D8EA3003588DF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2DF87279D8EA3003588DF /* FeedCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD00E210279CA777006BA0CD /* PhotoShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD00E213279CA777006BA0CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD00E215279CA777006BA0CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AD00E217279CA777006BA0CD /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		AD00E21A279CA777006BA0CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD00E21C279CA77B006BA0CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD00E21F279CA77B006BA0CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD00E221279CA77B006BA0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD00E229279CA923006BA0CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD00E232279CD205006BA0CD /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		AD00E234279CD21E006BA0CD /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		AD00E236279CD231006BA0CD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AD22DD1727AFF44500809F12 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ADF2DF87279D8EA3003588DF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD00E20D279CA777006BA0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD00E22D279CAD5E006BA0CD /* FirebaseAuth in Frameworks */,
+				AD00E22F279CAD5E006BA0CD /* FirebaseFirestore in Frameworks */,
+				AD22DD1627AFF0FB00809F12 /* SDWebImage in Frameworks */,
+				AD00E231279CAD5E006BA0CD /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD00E207279CA777006BA0CD = {
+			isa = PBXGroup;
+			children = (
+				AD00E212279CA777006BA0CD /* PhotoShare */,
+				AD00E211279CA777006BA0CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD00E211279CA777006BA0CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD00E210279CA777006BA0CD /* PhotoShare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD00E212279CA777006BA0CD /* PhotoShare */ = {
+			isa = PBXGroup;
+			children = (
+				AD00E229279CA923006BA0CD /* GoogleService-Info.plist */,
+				AD00E213279CA777006BA0CD /* AppDelegate.swift */,
+				AD00E215279CA777006BA0CD /* SceneDelegate.swift */,
+				AD00E217279CA777006BA0CD /* AuthViewController.swift */,
+				AD00E232279CD205006BA0CD /* FeedViewController.swift */,
+				ADF2DF87279D8EA3003588DF /* FeedCell.swift */,
+				AD00E234279CD21E006BA0CD /* UploadViewController.swift */,
+				AD00E236279CD231006BA0CD /* SettingsViewController.swift */,
+				AD00E219279CA777006BA0CD /* Main.storyboard */,
+				AD00E21C279CA77B006BA0CD /* Assets.xcassets */,
+				AD00E21E279CA77B006BA0CD /* LaunchScreen.storyboard */,
+				AD00E221279CA77B006BA0CD /* Info.plist */,
+				AD22DD1727AFF44500809F12 /* Post.swift */,
+			);
+			path = PhotoShare;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD00E20F279CA777006BA0CD /* PhotoShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD00E224279CA77B006BA0CD /* Build configuration list for PBXNativeTarget "PhotoShare" */;
+			buildPhases = (
+				AD00E20C279CA777006BA0CD /* Sources */,
+				AD00E20D279CA777006BA0CD /* Frameworks */,
+				AD00E20E279CA777006BA0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoShare;
+			packageProductDependencies = (
+				AD00E22C279CAD5E006BA0CD /* FirebaseAuth */,
+				AD00E22E279CAD5E006BA0CD /* FirebaseFirestore */,
+				AD00E230279CAD5E006BA0CD /* FirebaseStorage */,
+				AD22DD1527AFF0FB00809F12 /* SDWebImage */,
+			);
+			productName = PhotoShare;
+			productReference = AD00E210279CA777006BA0CD /* PhotoShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD00E208279CA777006BA0CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					AD00E20F279CA777006BA0CD = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AD00E20B279CA777006BA0CD /* Build configuration list for PBXProject "PhotoShare" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD00E207279CA777006BA0CD;
+			packageReferences = (
+				AD00E22B279CAD5E006BA0CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AD22DD1427AFF0FB00809F12 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = AD00E211279CA777006BA0CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD00E20F279CA777006BA0CD /* PhotoShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD00E20E279CA777006BA0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD00E220279CA77B006BA0CD /* LaunchScreen.storyboard in Resources */,
+				AD00E22A279CA923006BA0CD /* GoogleService-Info.plist in Resources */,
+				AD00E21D279CA77B006BA0CD /* Assets.xcassets in Resources */,
+				AD00E21B279CA777006BA0CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD00E20C279CA777006BA0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF2DF88279D8EA3003588DF /* FeedCell.swift in Sources */,
+				AD00E218279CA777006BA0CD /* AuthViewController.swift in Sources */,
+				AD00E235279CD21E006BA0CD /* UploadViewController.swift in Sources */,
+				AD22DD1827AFF44500809F12 /* Post.swift in Sources */,
+				AD00E214279CA777006BA0CD /* AppDelegate.swift in Sources */,
+				AD00E233279CD205006BA0CD /* FeedViewController.swift in Sources */,
+				AD00E216279CA777006BA0CD /* SceneDelegate.swift in Sources */,
+				AD00E237279CD231006BA0CD /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD00E219279CA777006BA0CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD00E21A279CA777006BA0CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD00E21E279CA77B006BA0CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD00E21F279CA77B006BA0CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD00E222279CA77B006BA0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD00E223279CA77B006BA0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD00E225279CA77B006BA0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92867Z79G9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoShare/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "For pick a image";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erdemozkok.PhotoShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD00E226279CA77B006BA0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92867Z79G9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoShare/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "For pick a image";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erdemozkok.PhotoShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD00E20B279CA777006BA0CD /* Build configuration list for PBXProject "PhotoShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00E222279CA77B006BA0CD /* Debug */,
+				AD00E223279CA77B006BA0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD00E224279CA77B006BA0CD /* Build configuration list for PBXNativeTarget "PhotoShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00E225279CA77B006BA0CD /* Debug */,
+				AD00E226279CA77B006BA0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD00E22B279CAD5E006BA0CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		AD22DD1427AFF0FB00809F12 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD00E22C279CAD5E006BA0CD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD00E22B279CAD5E006BA0CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AD00E22E279CAD5E006BA0CD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD00E22B279CAD5E006BA0CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AD00E230279CAD5E006BA0CD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD00E22B279CAD5E006BA0CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		AD22DD1527AFF0FB00809F12 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD22DD1427AFF0FB00809F12 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AD00E208279CA777006BA0CD /* Project object */;
+}
